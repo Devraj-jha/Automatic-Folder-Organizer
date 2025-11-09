@@ -1,0 +1,33 @@
+A dictionary is a collection of key-value pairs.
+bascially there is a key and there is a value. 
+similar to object in java script I guess.
+
+person = {
+    "name" : "alice",
+    "age" : 23
+}
+car = {"brand": "Tesla", "model": "Model 3", "year": 2022} 
+2 ways to create a dictionary... 
+car = dict(brand="Tesla", model="Model 3", year=2022)
+
+
+
+print(car["brand"]) => #tesla... 
+print(car.get("color"))      # None
+print(car["color"])          # ❌ KeyError
+
+
+| Method      | Example            | Description                   |
+| ----------- | ------------------ | ----------------------------- |
+| `pop(key)`  | `car.pop("model")` | Removes and returns the value |
+| `del`       | `del car["brand"]` | Deletes key-value pair        |
+| `clear()`   | `car.clear()`      | Empties the dictionary        |
+| `popitem()` | `car.popitem()`    | Removes last inserted item    |
+
+
+users = {
+    "user1": {"name": "Alice", "age": 25},
+    "user2": {"name": "Bob", "age": 30}
+}
+
+print(users["user1"]["name"])  # Alice
