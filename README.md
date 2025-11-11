@@ -1,6 +1,3 @@
-Perfect. You’ve written the **core content** already — we just need to format it properly into a **professional, GitHub-ready README** with clean Markdown, natural wording, and no “AI feel.”
-
-Here’s the polished version you can paste directly as your `README.md` 👇
 
 ---
 
@@ -19,12 +16,12 @@ No more messy Downloads folders — one script keeps your workspace clean and st
 
 ## ✨ Features
 
-* ✅ Automatically detects file types (images, documents, videos, code, etc.)
-* ✅ Creates categorized folders automatically if they don’t exist
-* ✅ Safely moves files to their respective categories
-* ✅ Works seamlessly on **macOS**, **Windows**, and **Linux**
-* ✅ Fully customizable — easily add or edit file types in `categories.py`
-* ✅ Modular design with clear separation of logic across files
+*  Automatically detects file types (images, documents, videos, code, etc.)
+*  Creates categorized folders automatically if they don’t exist
+*  Safely moves files to their respective categories
+*  Works seamlessly on **macOS**, **Windows**, and **Linux**
+*  Fully customizable — easily add or edit file types in `categories.py`
+*  Modular design with clear separation of logic across files
 
 ---
 
@@ -63,9 +60,9 @@ folder_organizer/
 * Python **3.8+** (recommended)
 * Works on:
 
-  * 🪟 **Windows**
-  * 🍎 **macOS**
-  * 🐧 **Linux**
+  * **Windows**
+  *  **macOS**
+  *  **Linux**
 
 ---
 
@@ -182,22 +179,6 @@ Downloads/
 
 ---
 
-## 🧩 Future Improvements
-
-* Add a **Dry Run** mode (show moves without executing them).
-* Add a **GUI version** using Tkinter.
-* Add an **Undo** option.
-* Generate logs of all moved files.
-
----
-
-## 👨‍💻 Author
-
-**Devraj Jha**
-A Python learner focused on writing clean, modular, and practical automation tools.
-
-> “Don’t organize your files manually — let your code do it.”
-
 ---
 
 ### ✅ License
@@ -205,5 +186,3 @@ A Python learner focused on writing clean, modular, and practical automation too
 This project is open-source and free to use for learning and personal automation purposes.
 
 ---
-
-Would you like me to make it look like a **GitHub-ready README with badges** (Python version badge, platform badge, etc.) — something that gives it a more *professional open-source look*?
