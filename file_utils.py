@@ -35,7 +35,7 @@ def organize_folder(folder_path):
             os.makedirs(category_folder)
 
         shutil.move(item_path, os.path.join(category_folder, item))
-        print(f"✅ Moved: {item} → {category}/")  # feedback for user
+        print(f" Moved: {item} → {category}/")  # feedback for user
 
 
 def count_files(folder_path):
