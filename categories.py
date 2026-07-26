@@ -5,11 +5,29 @@
 # it will move it into that folder.
 
 CATEGORIES = {
-    "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp"],
-    "Documents": [".pdf", ".docx", ".txt", ".pptx", ".xlsx"],
-    "Audio": [".mp3", ".wav", ".m4a"],
-    "Videos": [".mp4", ".mov", ".avi", ".mkv"],
-    "Archives": [".zip", ".rar", ".tar", ".gz"],
-    "Code": [".py", ".js", ".html", ".css", ".cpp", ".java"],
-    "Others": []  # if it doesn't match any above
+    "Images": [
+        ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", ".webp",
+        ".tiff", ".tif", ".heic", ".heif", ".ico",
+    ],
+    "Documents": [
+        ".pdf", ".docx", ".doc", ".txt", ".pptx", ".ppt",
+        ".xlsx", ".xls", ".csv", ".md", ".odt", ".epub", ".rtf",
+    ],
+    "Audio": [
+        ".mp3", ".wav", ".m4a", ".flac", ".aac", ".ogg", ".wma",
+    ],
+    "Videos": [
+        ".mp4", ".mov", ".avi", ".mkv", ".wmv", ".webm", ".flv",
+    ],
+    "Archives": [
+        ".zip", ".rar", ".tar", ".gz", ".7z", ".bz2", ".xz", ".iso",
+    ],
+    "Code": [
+        ".py", ".js", ".ts", ".html", ".css", ".cpp", ".c", ".h",
+        ".java", ".rb", ".go", ".rs", ".sh", ".json", ".xml",
+        ".sql", ".php", ".swift", ".kt",
+    ],
+    "Fonts": [
+        ".ttf", ".otf", ".woff", ".woff2", ".eot",
+    ],
 }

@@ -1,2 +1,10 @@
-.vscode
-__pycache__
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+organize_log.json
+.organize_log.json
+*.egg-info/
+venv/
+.env
