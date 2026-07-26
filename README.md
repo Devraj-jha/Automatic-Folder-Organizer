@@ -1,46 +1,46 @@
 
-# 🗂️ Folder Organizer (Python Automation Tool)
+# Folder Organizer (Python Automation Tool)
 
-## 📖 Overview
+## Overview
 
 The **Folder Organizer** is a lightweight Python automation tool that automatically sorts files in a directory based on their type.
-It gives the user the ability to provide any folder path — and with one command, it organizes the entire folder neatly by moving each file into its appropriate category (e.g., all `.jpg` → `Images`, `.pdf` → `Documents`, etc.).
+It gives the user the ability to provide any folder path -- and with one command, it organizes the entire folder neatly by moving each file into its appropriate category (e.g., all `.jpg` -> `Images`, `.pdf` -> `Documents`, etc.).
 
-No more messy Downloads folders — one script keeps your workspace clean and structured.
-
----
-
-## ✨ Features
-
-* ✅ Automatically detects file types (images, documents, videos, code, fonts, and more)
-* ✅ Creates categorized folders automatically if they don't exist
-* ✅ Safely moves files to their respective categories
-* ✅ **Dry Run** mode — preview moves without actually touching files
-* ✅ **Undo** — reverse the last organize operation with one command
-* ✅ Handles duplicate filenames gracefully (appends a counter)
-* ✅ Error handling for permission issues and locked files
-* ✅ Works seamlessly on **macOS**, **Windows**, and **Linux**
-* ✅ Fully customizable — easily add or edit file types in `categories.py`
-* ✅ Modular design with clear separation of logic across files
-* ✅ Built-in unit tests
+No more messy Downloads folders -- one script keeps your workspace clean and structured.
 
 ---
 
-## 📂 Project Structure
+## Features
+
+* Automatically detects file types (images, documents, videos, code, fonts, and more)
+* Creates categorized folders automatically if they don't exist
+* Safely moves files to their respective categories
+* **Dry Run** mode -- preview moves without actually touching files
+* **Undo** -- reverse the last organize operation with one command
+* Handles duplicate filenames gracefully (appends a counter)
+* Error handling for permission issues and locked files
+* Works seamlessly on **macOS**, **Windows**, and **Linux**
+* Fully customizable -- easily add or edit file types in `categories.py`
+* Modular design with clear separation of logic across files
+* Built-in unit tests
+
+---
+
+## Project Structure
 
 ```
 folder_organizer/
-│
-├── main.py              # Entry point – CLI interface
-├── file_utils.py        # Core organization logic, undo, logging
-├── categories.py        # File categories and extension mappings
-├── test_organizer.py    # Unit tests
-└── README.md            # This file
+|
+|-- main.py              # Entry point - CLI interface
+|-- file_utils.py        # Core organization logic, undo, logging
+|-- categories.py        # File categories and extension mappings
+|-- test_organizer.py    # Unit tests
+`-- README.md            # This file
 ```
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. Run the program in your terminal with a folder path.
 2. The program scans all files in that folder.
@@ -61,27 +61,24 @@ folder_organizer/
 
 ---
 
-## 💻 Requirements
+## Requirements
 
 * Python **3.8+** (recommended)
-* No external dependencies — uses only the standard library
-* Works on:
-  * 🪟 **Windows**
-  * 🍎 **macOS**
-  * 🐧 **Linux**
+* No external dependencies -- uses only the standard library
+* Works on **Windows**, **macOS**, and **Linux**
 
 ---
 
-## 🧠 How to Run
+## How to Run
 
-### 1️⃣ Clone or Download the Project
+### 1. Clone or Download the Project
 
 ```bash
 git clone https://github.com/Devraj-jha/Automatic-Folder-Organizer.git
 cd Automatic-Folder-Organizer
 ```
 
-### 2️⃣ Organize a Folder
+### 2. Organize a Folder
 
 ```bash
 python3 main.py ~/Downloads
@@ -103,7 +100,7 @@ Organizing files...
 Organized 5 file(s). Log saved for undo.
 ```
 
-### 3️⃣ Preview Without Moving (Dry Run)
+### 3. Preview Without Moving (Dry Run)
 
 ```bash
 python3 main.py ~/Downloads --dry-run
@@ -121,7 +118,7 @@ Files found: 5
 5 file(s) would be moved.
 ```
 
-### 4️⃣ Undo the Last Organize
+### 4. Undo the Last Organize
 
 ```bash
 python3 main.py ~/Downloads --undo
@@ -137,7 +134,7 @@ Undoing last organize...
 Undone 3 move(s). Log removed.
 ```
 
-### 5️⃣ Just Count Files
+### 5. Just Count Files
 
 ```bash
 python3 main.py ~/Downloads --count
@@ -147,7 +144,7 @@ python3 main.py ~/Downloads --count
 Files found: 5
 ```
 
-### 6️⃣ Interactive Mode (No Arguments)
+### 6. Interactive Mode (No Arguments)
 
 ```bash
 python3 main.py
@@ -159,7 +156,7 @@ Enter the full path of the folder to organize: ~/Downloads
 
 ---
 
-## 🧩 Customize Categories
+## Customize Categories
 
 Open **`categories.py`** and edit the `CATEGORIES` dictionary:
 
@@ -174,44 +171,44 @@ CATEGORIES = {
 
 ---
 
-## 🧰 Example: Before & After
+## Example: Before & After
 
 ### Before
 
 ```
 Downloads/
-├── photo.jpg
-├── song.mp3
-├── resume.pdf
-├── movie.mp4
-├── script.py
-├── font.ttf
-├── backup.zip
+|-- photo.jpg
+|-- song.mp3
+|-- resume.pdf
+|-- movie.mp4
+|-- script.py
+|-- font.ttf
+|-- backup.zip
 ```
 
 ### After
 
 ```
 Downloads/
-├── Images/
-│   └── photo.jpg
-├── Audio/
-│   └── song.mp3
-├── Documents/
-│   └── resume.pdf
-├── Videos/
-│   └── movie.mp4
-├── Code/
-│   └── script.py
-├── Fonts/
-│   └── font.ttf
-├── Archives/
-│   └── backup.zip
+|-- Images/
+|   `-- photo.jpg
+|-- Audio/
+|   `-- song.mp3
+|-- Documents/
+|   `-- resume.pdf
+|-- Videos/
+|   `-- movie.mp4
+|-- Code/
+|   `-- script.py
+|-- Fonts/
+|   `-- font.ttf
+|-- Archives/
+|   `-- backup.zip
 ```
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 python3 -m unittest test_organizer -v
@@ -219,7 +216,7 @@ python3 -m unittest test_organizer -v
 
 ---
 
-## 🧩 Future Improvements
+## Future Improvements
 
 * Add a **GUI version** using Tkinter
 * Add **recursive mode** to organize sub-folders too
@@ -228,15 +225,15 @@ python3 -m unittest test_organizer -v
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Devraj Jha**
 A Python learner focused on writing clean, modular, and practical automation tools.
 
-> "Don't organize your files manually — let your code do it."
+> "Don't organize your files manually -- let your code do it."
 
 ---
 
-### ✅ License
+### License
 
 This project is open-source and free to use for learning and personal automation purposes.
